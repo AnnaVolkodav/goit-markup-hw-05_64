@@ -105,7 +105,8 @@ body {
 .link-contact,
 .link-footer,
 .link-images,
-.social-link {
+.social-link,
+.link-images.images-overlay-text {
     text-decoration: none;
 }
 
@@ -333,6 +334,34 @@ body {
 }
 
 .item-images-list {}
+
+.thumb-what-we-do {
+    position: relative;
+    display: flex;
+}
+
+/* .thumb-what-we-do:hover .dscn-what-we-do {
+    opacity: 0;
+} */
+
+.dscn-what-we-do {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, 0%); */
+    width: 100%;
+    bottom: 0;
+    
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
 /* our team Section */
 
@@ -667,6 +696,29 @@ body {
 
 .link-images {
     display: block;
+}
+
+.link-images-overlay {
+    position: relative;
+    /* display: flex; */
+}
+
+.images-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    color: --white-color;
+    /* display: inline-block; */
+    /* padding: 63px 24px; */
+    font-size: 18px;
+    line-height: 1.33;
+    
+    opacity: ;
 }
 
 /* НЕ ПРАЦЮЄ ТІНЬ НА ПОСИЛАННЯХ, ЛИШЕ НА ЛІШКАХ .item-img-menu */
