@@ -785,6 +785,15 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 100;
+
+    transition: opacity var(--transition-dur-func),
+    visibility var(--transition-dur-func);
+}
+
+.backdrop.is-hidden {
+    visibility:hidden;
+    opacity:0;
+    pointer-events:none;
 }
 
 .modal {
