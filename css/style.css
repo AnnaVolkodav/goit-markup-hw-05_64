@@ -141,7 +141,12 @@ body {
     position: relative;
 }
 
-.link-nav:active::after {
+.link-nav {
+    color: var(--main-dark-color);
+    transition: color var(--transition-dur-func);
+}
+
+.link-nav:focus::after {
     content: "";
     display: flex;
     position: absolute;
@@ -156,10 +161,11 @@ body {
     margin-bottom: 0;
 }
 
-.link-nav {
-    color: var(--main-dark-color);
-    transition: color var(--transition-dur-func);
+.link-nav:focus {
+    color: var(--blue-color);
 }
+
+
 
 .header-contacts .item-header-contacts:not(:last-child) {
     margin-right: 50px;
