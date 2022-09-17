@@ -860,3 +860,17 @@ body {
     padding: 0;
 }
 
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+    color: var(--main-dark-color);
+    text-align: center;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
